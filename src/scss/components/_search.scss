@@ -14,6 +14,8 @@
   form {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    //background: yellow;
   }
 
   input#username {
@@ -52,11 +54,22 @@
       outline: none;
       color: #4a4a4a;
     }
+
+    @media screen and (max-width: 910px) {
+      max-width: 380px;
+      width: 80%;
+
+      padding: 2px 15px;
+      font: 2em/1.9 'Ubuntu', sans-serif;
+      font-weight: 300;
+    }
   }
 
   button.button {
     padding: 5px 20px;
     font: 1.5em/3.1 'Ubuntu', sans-serif;
+
+    width: 100%;
 
     border: none;
     border-radius: 12px;
@@ -85,6 +98,12 @@
       box-shadow: none;
       top: 4px;
       //margin-bottom: 0;
+    }
+
+    @media screen and (max-width: 910px) {
+      width: 89%;
+      padding: 0 15px;
+      font: 1.3em/3.1 'Ubuntu', sans-serif;
     }
   }
 }
